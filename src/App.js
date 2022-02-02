@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Carrousel from './Carrousel'
 
 function App() {

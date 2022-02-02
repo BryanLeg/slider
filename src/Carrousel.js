@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import data from './data';
+import persons from './data';
 
 const Carrousel = () => {
-    const [persons, setPersons] = useState(data);
     const [index, setIndex] = useState(0)
 
 
@@ -14,7 +13,7 @@ const Carrousel = () => {
         if (index < 0) {
             setIndex(persons.length - 1)
         }
-    }, [index])
+    }, [index], [persons.length])
 
     useEffect(() => {
         let slide = setInterval(() => {
